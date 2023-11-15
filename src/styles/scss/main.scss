@@ -1,0 +1,108 @@
+@import "~bootstrap/scss/bootstrap";
+
+h1 {
+  color: cyan;
+}
+
+// Header
+#header {
+  height: 100vh;
+  background: url(../../assets/images/banner.jpg) no-repeat;
+  background-size: cover;
+  margin-top: -4rem;
+}
+
+.title {
+  --bs-border-opacity: 0.7;
+  z-index: 0;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.bg-blue {
+  @media (max-width: 992px) {
+    background-color: #0f101b !important;
+  }
+}
+
+// Navbar Styles
+
+// Customized navbar toggler
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  color: #fff;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    transition: all 0.2s;
+    height: 2px;
+    background: white;
+    margin-top: 4px;
+    border-radius: 15px;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}
+
+// Customize navbar
+.navbar {
+  z-index: 1 !important;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+// Customize the links
+.nav-link {
+  color: #fff !important;
+}
+
+// Customize the active link
+.active {
+  color: $green-400 !important;
+}
+
+// ---------------------------------------------------
