@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A simple website to be a personal portfolio for a software developer!",
-  "main": "index.js",
+  "source": "./src/index.html",
   "scripts": {
     "dev": "parcel src/index.html --no-cache",
-    "build": "parcel build",
+    "build": "parcel build src/index.html",
     "cleanup": "rmdir /q /s .parcel-cache dist"
   },
   "author": "Norberto Boa",
