@@ -11,7 +11,7 @@
     <!-- Scripts -->
     <script type="module" src="./js/main.js"></script>
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container justify-content-between">
@@ -103,6 +103,88 @@
                 </span>
                 +258 84 686 0612
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About me -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <img
+            src="./assets/images/profile.jpg"
+            alt="Norberto Boa"
+            class="w-100 shadow rounded"
+          />
+        </div>
+
+        <div class="col-12 col-lg-6 mt-4">
+          <!-- Technologies -->
+          <a
+            class="btn btn-outline-dark w-100 mb-2"
+            data-bs-toggle="offcanvas"
+            href="#technologies"
+            role="button"
+            aria-controls="technologies"
+          >
+            🛠 Technologies
+          </a>
+
+          <!-- Personal Info -->
+          <a
+            class="btn btn-outline-info w-100 mb-2"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            ℹ Personal Info
+          </a>
+
+          <!-- Hobbies -->
+          <a
+            class="btn btn-outline-info w-100 mb-2"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            🕹 Hobbies
+          </a>
+
+          <div
+            class="offcanvas offcanvas-start text-bg-dark"
+            tabindex="-1"
+            id="technologies"
+            aria-labelledby="technologiesLabel"
+            data-bs-backdrop="static"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="technologiesLabel">
+                🛠 Technologies
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <code>
+                  <span>const</span> <var>Technologies = </var>
+                  <span>&#123;</span><br />
+                  <var class="ps-2 ">HTML, CSS & JavaScript,</var></br> 
+                  <var class="ps-2 ">TypeScript,</var></br> 
+                  <var class="ps-2 ">PHP,</var></br> 
+                  <var class="ps-2 ">Next,</var></br> 
+                  <var class="ps-2 ">NodeJS</var></br>
+                  <span>&#125;;</span> 
+                </code>
+              </div>
             </div>
           </div>
         </div>

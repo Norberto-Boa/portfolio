@@ -1,9 +1,5 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-h1 {
-  color: cyan;
-}
-
 // Header
 #header {
   height: 100vh;
@@ -106,3 +102,9 @@ h1 {
 }
 
 // ---------------------------------------------------
+
+// About Me
+var {
+  color: $light;
+  font-style: normal;
+}
