@@ -24,6 +24,10 @@ section {
   }
 }
 
+.bg-blue-lg {
+  background-color: #0f101b !important;
+}
+
 // Header
 #header {
   height: 100vh;
@@ -125,5 +129,28 @@ var {
     border-bottom: 1px solid #a3cfbb !important;
     padding-bottom: $spacer * 0.5;
     margin-bottom: $spacer * 1;
+  }
+}
+
+// -----------------------------
+// Projects
+.project-card {
+  position: relative;
+  box-sizing: border-box;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 25%;
+    background: $success;
+    transition: all 0.7s;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
   }
 }
