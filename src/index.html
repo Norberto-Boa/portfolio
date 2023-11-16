@@ -58,6 +58,7 @@
             I am a Software Developer
           </h1>
           <a href="#" class="btn btn-outline-success">Get to know me</a>
+          <a href="#" class="btn btn-success">See Resume 📃</a>
         </div>
       </div>
     </div>
@@ -99,114 +100,152 @@
   </div>
 
   <!-- About me -->
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <img src="./assets/images/profile.jpg" alt="Norberto Boa" class="w-100 shadow rounded" />
-      </div>
-
-      <div class="col-12 col-lg-8 mt-4 mt-lg-0">
-        <h2 class="text-success">Norberto Boa</h2>
-        <p class="text-dark mb-4 pb-4 border-bottom border-success-subtle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ab fugit minima
-          nihil, iusto dicta sed adipisci maiores aut, nobis suscipit itaque dolore sapiente, velit laudantium amet
-          doloribus delectus laborum ut magnam labore rerum ex. Suscipit ratione minus nobis mollitia.
-        </p>
-
-        <!-- Technologies -->
-        <a class="btn btn-outline-success w-25 mb-2" data-bs-toggle="offcanvas" href="#technologies" role="button"
-          aria-controls="technologies">
-          🛠 Technologies
-        </a>
-
-        <!-- Personal Info -->
-        <a class="btn btn-outline-success w-25 mb-2" data-bs-toggle="offcanvas" href="#personal" role="button"
-          aria-controls="offcanvasExample">
-          ℹ Personal Info
-        </a>
-
-        <!-- Hobbies -->
-        <a class="btn btn-outline-success  w-25 mb-2" data-bs-toggle="offcanvas" href="#hobbies" role="button"
-          aria-controls="offcanvasExample">
-          🕹 Hobbies
-        </a>
-
-        <!-- Technologies OffCanvas -->
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="technologies"
-          aria-labelledby="technologiesLabel" data-bs-backdrop="static">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="technologiesLabel">
-              🛠 Technologies
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div>
-              <code>
-                <span>const</span> <var>Technologies = </var>
-                <span>&#91;</span><br />
-                <var class="ps-2 "><span class="text-warning">"HTML, CSS & JavaScript"</span>,</var></br>
-                <var class="ps-2 "><span class="text-warning">"TypeScript"</span>,</var></br>
-                <var class="ps-2 "><span class="text-warning">"PHP"</span>,</var></br>
-                <var class="ps-2 "><span class="text-warning">"Next"</span>,</var></br>
-                <var class="ps-2 "><span class="text-warning">"NodeJS"</span></var></br>
-                <span>&#93;;</span>
-              </code>
+  <section id="about-me">
+    <div class="container">
+      <div class="row justify-content-center  justify-content-lg-between">
+        <div class="col-12">
+          <h3 class="text-center text-success-emphasis">Who is me?</h3>
+        </div>
+  
+        <div class="col-12 col-lg-4">
+          <img src="./assets/images/profile.jpg" alt="Norberto Boa" class="w-100 shadow rounded" />
+        </div>
+  
+        <div class="col-12 col-lg-8 mt-4 mt-lg-0">
+          <h2 class="text-success mb-0">Norberto Boa</h2>
+          <p class="text-dark mb-4 pb-2 border-bottom border-success-subtle"> Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Harum ab fugit minima
+            nihil, iusto dicta sed adipisci maiores aut, nobis suscipit itaque dolore sapiente, velit laudantium amet
+            doloribus delectus laborum ut magnam labore rerum ex. Suscipit ratione minus nobis mollitia.
+          </p>
+  
+          <div class="row justify-content-center justify-content-lg-between">
+            <div class="col-12 col-md-8 col-lg-6 border-end border-dark-subtle buttons">
+              <div class="vstack">
+                <!-- Technologies -->
+                <a class="btn btn-outline-success w-100 mb-2" data-bs-toggle="offcanvas" href="#technologies" role="button"
+                  aria-controls="technologies">
+                  🛠 Technologies
+                </a>
+    
+                <!-- Personal Info -->
+                <a class="btn btn-outline-success w-100 mb-2" data-bs-toggle="offcanvas" href="#personal" role="button"
+                  aria-controls="offcanvasExample">
+                  ℹ Personal Info
+                </a>
+    
+                <!-- Hobbies -->
+                <a class="btn btn-outline-success  w-100 mb-2" data-bs-toggle="offcanvas" href="#hobbies" role="button"
+                  aria-controls="offcanvasExample">
+                  🕹 Hobbies
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-12 col-lg-6 mt-2">
+              <div class="vstack text-center text-lg-start">
+                <!-- Address -->
+                <div class="vstack">
+                  <p class="fw-bold text-success">Address: <span class="text-muted fw-medium">127.0.0.1</span></p>
+                </div>
+                <!-- Email -->
+                <div class="vstack ">
+                  <p class="fw-bold text-success">Email: <span class="text-muted fw-medium">nboa.26@gmail.com</span></p>
+                </div>
+                <!-- Contact -->
+                <div class="vstack ">
+                  <p class="fw-bold text-success">Contact: <span class="text-muted fw-medium">+258 84 686 0612</span></p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Personal Info OffCanvas -->
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="personal" aria-labelledby="personalLabel"
-          data-bs-backdrop="static">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="personalLabel">
-              ℹ Personal Info
-            </h5>
-            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div>
-              <code>
-                <span>const</span> <var>personalInfo = </var>
-                <span>&#123;</span><br />
-                <var class="ps-2 ">Name: </var><span class="text-warning">"Norberto Boa"</span></br>
-                <var class="ps-2 ">Nationality: </var><span class="text-warning">"Mozambique"</span></br>
-                <var class="ps-2 ">Languages: </var>[ <span class="text-warning">"Portuguese"</span>, <span
-                  class="text-warning">"English"</span>]</br>
-                <span>&#125;;</span>
-              </code>
+  
+  
+          <!-- Technologies OffCanvas -->
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="technologies"
+            aria-labelledby="technologiesLabel" data-bs-backdrop="static">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="technologiesLabel">
+                🛠 Technologies
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <code>
+                  <span>const</span> <var>Technologies = </var>
+                  <span>&#91;</span><br />
+                  <var class="ps-4"><span class="text-warning">"HTML, CSS & JavaScript"</span>,</var></br>
+                  <var class="ps-4 "><span class="text-warning">"TypeScript"</span>,</var></br>
+                  <var class="ps-4 "><span class="text-warning">"PHP"</span>,</var></br>
+                  <var class="ps-4 "><span class="text-warning">"Next"</span>,</var></br>
+                  <var class="ps-4 "><span class="text-warning">"NodeJS"</span></var></br>
+                  <span>&#93;;</span>
+                </code>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Hobbies OffCanvas -->
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="hobbies" aria-labelledby="hobbiesLabel"
-          data-bs-backdrop="static">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="hobbiesLabel">
-              🕹 Hobbies
-            </h5>
-            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+  
+          <!-- Personal Info OffCanvas -->
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="personal" aria-labelledby="personalLabel"
+            data-bs-backdrop="static">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="personalLabel">
+                ℹ Personal Info
+              </h5>
+              <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <code>
+                  <span>const</span> <var>personalInfo = </var>
+                  <span>&#123;</span><br />
+                  <var class="ps-4 ">Name: </var><span class="text-warning">"Norberto Boa"</span></br>
+                  <var class="ps-4 ">Nationality: </var><span class="text-warning">"Mozambique"</span></br>
+                  <var class="ps-4 ">Languages: </var>[ <span class="text-warning">"Portuguese"</span>, <span
+                    class="text-warning">"English"</span>]</br>
+                  <span>&#125;;</span>
+                </code>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <div>
-              <code>
-                <span>const</span> <var>hobbies = </var>
-                <span>&#91;</span><br />
-                <var class="ps-2"><span class="text-warning">"Code"</span>,</var></br>
-                <var class="ps-2">><span class="text-warning">"Football"</span>,</var></br>
-                <var class="ps-2">><span class="text-warning">"Sex"</span>,</var></br>
-                &#93;<span class="text-light">;</span>
-              </code>
+  
+          <!-- Hobbies OffCanvas -->
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="hobbies" aria-labelledby="hobbiesLabel"
+            data-bs-backdrop="static">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="hobbiesLabel">
+                🕹 Hobbies
+              </h5>
+              <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <code>
+                  <span>const</span> <var>hobbies = </var>
+                  <span>&#91;</span><br />
+                  <var class="ps-4"><span class="text-warning">"Code"</span>,</var></br>
+                  <var class="ps-4"><span class="text-warning">"Football"</span>,</var></br>
+                  <var class="ps-4"><span class="text-warning">"Sex"</span>,</var></br>
+                  &#93;<span class="text-light">;</span>
+                </code>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+
+    </div>
+  </section>
 </body>
 
 </html>
