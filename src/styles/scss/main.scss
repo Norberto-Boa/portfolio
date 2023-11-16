@@ -33,6 +33,7 @@ section {
   height: 100vh;
   background: url(../../assets/images/banner.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: -4rem;
 }
 
@@ -134,9 +135,18 @@ var {
 
 // -----------------------------
 // Projects
+
+#projects {
+  background: url(../../assets/images/projects-banner.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .project-card {
   position: relative;
   box-sizing: border-box;
+  height: 16rem;
+
   &:after {
     content: "";
     position: absolute;
@@ -151,6 +161,13 @@ var {
   &:hover {
     &:after {
       width: 100%;
+    }
+  }
+
+  &:hover {
+    .bg-dark {
+      transition: all 0.7s ease-in-out;
+      --bs-bg-opacity: 1 !important;
     }
   }
 }
