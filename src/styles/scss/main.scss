@@ -90,7 +90,6 @@ section {
 // Customize navbar
 .navbar {
   z-index: 1 !important;
-  position: relative;
   transition: all 0.7s ease-in-out;
 
   &:after {
@@ -105,6 +104,22 @@ section {
   }
 }
 
+.nav-white {
+  background-color: $light !important;
+  border-bottom: 1px solid $success;
+
+  .nav-link {
+    color: $dark !important;
+  }
+
+  .active {
+    color: $green-400 !important;
+  }
+
+  .navbar-brand {
+    color: $dark !important;
+  }
+}
 // Customize the links
 .nav-link {
   color: #fff !important;
@@ -169,5 +184,22 @@ var {
       transition: all 0.7s ease-in-out;
       --bs-bg-opacity: 1 !important;
     }
+  }
+}
+
+// ----------------------------------------------------------------
+// Contacts
+
+#contacts {
+  padding: 4rem 0 !important;
+}
+
+.form-wrapper {
+  @media (max-width: 992px) {
+    border-right: none !important;
+    border-bottom: 1px solid $white !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-bottom: $spacer * 1;
+    margin-bottom: $spacer * 1;
   }
 }
