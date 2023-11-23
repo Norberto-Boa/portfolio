@@ -14,6 +14,10 @@ section {
   z-index: 0;
 }
 
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
 .bottom-10 {
   bottom: 10px;
 }
@@ -118,6 +122,13 @@ section {
 
   .navbar-brand {
     color: $dark !important;
+  }
+
+  .navbar-toggler {
+    color: #0f101b !important;
+  }
+  .icon-bar {
+    background: #0f101b !important;
   }
 }
 // Customize the links
