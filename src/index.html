@@ -435,11 +435,11 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 mb-4">
-            <h2 class="text-success fw-bold text-center">Contacts</h2>
+            <h2 class="text-success fw-bold text-center text-uppercase">Contacts</h2>
           </div>
           <div class="col-12 col-lg-6 border-end border-dark-subtle pe-5 form-wrapper">
             <h4 class="text-success text-center text-lg-start">Get In Touch With Me</h4>
-            <form action="" id="contact">
+            <form action="" id="contact" onsubmit="event.preventDefault(); handleSubmit()">
 
               <!-- Name -->
               <div class="mb-2">
@@ -459,7 +459,7 @@
               <h6 class="text-warning mt-2 text-center text-lg-end">Avoid writing too much, I won't read!</h6>
               <h5 id="success" class="text-info"></h5>
               <h5 id="error" class="text-danger"></h5>
-              <button class="btn btn-success w-100" type="submit" onClick="handleSubmit()">
+              <button class="btn btn-success w-100" type="submit" id="submit-button">
                 Send Message
               </button>
             </form>
@@ -475,7 +475,7 @@
     </section>
   </div>
   <!-- Send email -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
 
   <script type="text/javascript">
@@ -487,20 +487,24 @@
 
 
   <script>
-    const handleSubmit = async () => {
-      alert('Submited!');
+    async function handleSubmit() {
       let message
       let errorMessage = document.querySelector("#error");
       let successMessage = document.querySelector("#success");
+      let submitButton = document.querySelector("#submit-button");
 
-      emailjs.sendForm('service_fl5i2he', 'template_af8j9pd', document.getElementById('contact'))
+      submitButton.disabled = true;
+
+      emailjs.sendForm('service_fl5i2he', 'template_af8j9pd', "#contact")
         .then(function (response) {
           message = "Message was sent successfully!";
           alert(message);
-          errorMessage.innerHTML = message;
+          submitButton.disabled = false;
+          successMessage.innerHTML = message;
         }, function (error) {
           message = "Something went wrong";
           alert(message);
+          submitButton.disabled = false;
           successMessage.innerHTML = message;
         });
     }
