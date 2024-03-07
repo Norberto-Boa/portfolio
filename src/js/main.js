@@ -26,3 +26,23 @@ function changeNavbarBackground() {
     navbar.classList.remove('nav-white');
   }
 };
+
+// Carousel
+let items = document.querySelectorAll('.carousel .carousel-item');
+
+items.forEach((el) => {
+  const w = window.innerWidth;
+  console.log(w);
+  const minPerSlide = w < 576 ? 4 : 6;
+  let next = el.nextElementSibling;
+  console.log(minPerSlide);
+  for(var i = 1; i < minPerSlide; i++){
+    if(!next){
+      next = items[0];
+    }
+
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
+  }
+})
