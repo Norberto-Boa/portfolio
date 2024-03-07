@@ -47,7 +47,7 @@ items.forEach((el) => {
   }
 })
 
-function handleSubmit() {
+export function handleSubmit() {
   let message
   let errorMessage = document.querySelector("#error");
   let successMessage = document.querySelector("#success");

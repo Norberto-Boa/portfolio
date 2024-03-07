@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>B The Dev</title>
 
   <!-- Styles -->
@@ -435,21 +438,21 @@
           <div class="col-12 mb-4">
             <h2 class="text-success fw-bold text-center text-uppercase">Contacts</h2>
           </div>
-          <div class="col-12 col-lg-6 border-end border-dark-subtle pe-5 form-wrapper">
+          <!-- <div class="col-12 col-lg-6 border-end border-dark-subtle pe-5 form-wrapper">
             <h4 class="text-success text-center text-lg-start">Get In Touch With Me</h4>
-            <form action="" id="contact" onsubmit="event.preventDefault(); handleSubmit()">
+            <form action="" id="contact" onsubmit="event.preventDefault(); handleSubmit(); console.log(`trigger`)">
 
-              <!-- Name -->
+              Name
               <div class="mb-2">
                 <label for="name" class="form-label text-light">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Norberto Boa">
               </div>
-              <!-- Email -->
+              Email
               <div class="mb-2">
                 <label for="email" class="form-label text-light">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="nboa.26@gmail.com">
               </div>
-              <!-- Message -->
+              Message
               <div class="mb-2">
                 <label for="message" class="form-label text-light">Message</label>
                 <textarea name="message" id="message" cols="20" rows="5" class="form-control"></textarea>
@@ -461,8 +464,33 @@
                 Send Message
               </button>
             </form>
-          </div>
+          </div> -->
 
+          <div class="col-12 col-lg-6 border-end border-dark-suble pe-5">
+            <h4 class="text-success text-center text-lg-start">Get In Touch With Me</h4>
+
+            <p>
+              <a href="tel:+258">84 686 0612</a>
+            </p>
+            <p>
+              <a href="tel:+258">87 686 0612</a>
+            </p>
+            <p>
+              <a href="mailto:nboa.26@gmail.com?subject=You are awesome">nboa.26@gmail.com</a>
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-3">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <div class="col-3">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="col-3">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
           <div class="col-12 col-lg-6 d-flex justify-content-center flex-column align-items-center ">
             <img src="./assets/images/mpesa.svg" alt="" class="opacity-50 w-25 mb-2">
             <h4 class="text-success">+258 84 686 0612</h4>
@@ -476,39 +504,42 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     (function () {
       // https://dashboard.emailjs.com/admin/integration
       emailjs.init('user_YxP8w6mA1FpMnzGbet6Iz');
     })();
-  </script>
+  </script> -->
 
   <!-- Scripts -->
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/handleContactForm.js"></script>
 
-  <script type="text/javascript">
-    // async function handleSubmit() {
-    //   let message
-    //   let errorMessage = document.querySelector("#error");
-    //   let successMessage = document.querySelector("#success");
-    //   let submitButton = document.querySelector("#submit-button");
 
-    //   submitButton.disabled = true;
+  <!-- <script type="module">
+    // Handle Submit
+    async function handleSubmit() {
+      let message
+      let errorMessage = document.querySelector("#error");
+      let successMessage = document.querySelector("#success");
+      let submitButton = document.querySelector("#submit-button");
 
-    //   emailjs.sendForm('service_fl5i2he', 'template_af8j9pd', "#contact")
-    //     .then(function (response) {
-    //       message = "Message was sent successfully!";
-    //       alert(message);
-    //       submitButton.disabled = false;
-    //       successMessage.innerHTML = message;
-    //     }, function (error) {
-    //       message = "Something went wrong";
-    //       alert(message);
-    //       submitButton.disabled = false;
-    //       successMessage.innerHTML = message;
-    //     });
-    // };
-  </script>
+      submitButton.disabled = true;
+
+      emailjs.sendForm('service_fl5i2he', 'template_af8j9pd', "#contact")
+        .then(function (response) {
+          message = "Message was sent successfully!";
+          alert(message);
+          submitButton.disabled = false;
+          successMessage.innerHTML = message;
+        }, function (error) {
+          message = "Something went wrong";
+          alert(message);
+          submitButton.disabled = false;
+          successMessage.innerHTML = message;
+        });
+    };
+  </script> -->
 
 </body>
 
