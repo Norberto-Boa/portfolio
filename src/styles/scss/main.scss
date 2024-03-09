@@ -274,3 +274,21 @@ var {
 .mt-10{
   margin-top: 15rem;
 }
+
+.fs-6{
+  font-size: 1.25rem;
+}
+
+.link{
+  color: #fff;
+  transition: all .3s;
+}
+
+.fs-7{
+  font-size: 1.75rem;
+}
+
+.link:hover{
+  color: #198754;
+  text-decoration: underline !important;
+}
