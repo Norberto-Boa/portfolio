@@ -28,14 +28,28 @@ function changeNavbarBackground() {
 };
 
 // Carousel
+document.addEventListener('DOMContentLoaded', () => {
+  // Select the carousel element
+  const carouselElement = document.querySelector('.carousel');
+
+  // Initialize the carousel using Bootstrap's Carousel API
+  const carousel = new bootstrap.Carousel(carouselElement, {
+    interval: 2000, // Set the interval to 2 seconds
+    ride: 'carousel', // Auto-start the carousel
+    pause: false // Ensure the carousel doesn't pause on hover
+  });
+
+  // Ensure the carousel starts immediately without delay
+  carousel.cycle();
+})
+
 let items = document.querySelectorAll('.carousel .carousel-item');
 
 items.forEach((el) => {
   const w = window.innerWidth;
-  console.log(w);
   const minPerSlide = w < 576 ? 4 : 6;
   let next = el.nextElementSibling;
-  console.log(minPerSlide);
+
   for (var i = 1; i < minPerSlide; i++) {
     if (!next) {
       next = items[0];
@@ -45,7 +59,7 @@ items.forEach((el) => {
     el.appendChild(cloneChild.children[0]);
     next = next.nextElementSibling;
   }
-})
+});
 
 export function handleSubmit() {
   let message
