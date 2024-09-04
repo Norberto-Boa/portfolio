@@ -1,7 +1,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Utilities
-body {
+
+
+html, body {
   overflow-x: hidden;
 }
 
@@ -94,7 +96,6 @@ section {
 .navbar {
   z-index: 1 !important;
   transition: all 0.7s ease-in-out;
-
   &:after {
     content: "";
     height: 1px;
